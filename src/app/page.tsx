@@ -41,7 +41,7 @@ export default function Home() {
             <p className="text-xs lg:text-base text-turquoise">Proven experience unleashing technological potential across mediums</p>
           </div>
         </div>
-        <div className="flex lg:basis-2/5 justify-center w-screen max-w-2xl py-24 sm:py-32 lg:py-44 bg-turquoise">
+        <div className="flex lg:basis-2/5 justify-center w-screen py-24 sm:py-32 lg:py-44 bg-turquoise">
           <Image
             src="/profile.jpeg"
             alt="profile photo"
