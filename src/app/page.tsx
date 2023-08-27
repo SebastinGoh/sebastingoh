@@ -1,113 +1,94 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <nav className="bg-myblue">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 font-figtree">
+        <a href="www.sebastingoh.com" className="">
+            <span className="self-center text-2xl whitespace-nowrap pl-3 text-turquoise">SEBASTIN <span className="text-offwhite">GOH</span></span>
+        </a>
+        {/* 
+        <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center w-15 h-15 justify-center text-sm text-turquoise rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-turquoise dark:hover:text-turquoise dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span className="sr-only">Open menu</span>
+            <svg className="block h-6 w-6" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+          </ul>
+        </div> */}
+      </div>
+    </nav>
+    <main className="flex min-h-screen flex-col items-center justify-between font-figtree">
+      <div className="flex flex-wrap items-stretch w-screen ">
+        <div className="w-screen lg:basis-3/5 py-14 sm:py-24 lg:py-28 bg-myblue px-14 lg:px-36">
+          <h1 className="text-5xl font-bold sm:text-6xl text-turquoise">Software Engineer<span className="text-offwhite">.</span></h1>
+          <p className="mt-6 text-lg lg:text-2xl text-offwhite">Creating responsive and engaging technology products that empowers.</p>
+          <div className="mt-16 flex gap-4 justify-items-stretch">
+            <p className="text-xs lg:text-base text-turquoise">Skilled at software development, product management and data analysis</p>
+            <p className="text-xs lg:text-base text-turquoise">Proven experience unleashing technological potential across mediums</p>
+          </div>
+        </div>
+        <div className="flex lg:basis-2/5 justify-center w-screen max-w-2xl py-24 sm:py-32 lg:py-44 bg-turquoise">
+          <Image
+            src="/profile.jpeg"
+            alt="profile photo"
+            width={180}
+            height={37}
+            priority
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="lg:flex w-screen mx-auto py-24 sm:py-24 lg:py-24 px-14">
+        <div className="lg:p-24">
+          <h2 className="text-3xl font-bold sm:text-4xl text-myblue lg:text-5xl">Software Development</h2>
+          <p className="text-xs mt-4 lg:text-base">
+            Proficient in full-stack web development with a focus on front-end expertise. 
+            Skilled in designing and implementing responsive, user-friendly interfaces using modern technologies such as HTML, CSS, JavaScript, and React. 
+            Adept at collaborating with cross-functional teams to deliver high-quality software solutions that enhance user experiences and drive business goals.
+          </p>
+        </div>
+        <div className="lg:p-24">
+          <h2 className="text-3xl font-bold sm:text-4xl text-myblue mt-12 lg:text-5xl">Data Analysis</h2>
+          <p className="text-xs mt-4 lg:text-base">
+          Experienced in extracting actionable insights from complex datasets to drive informed decision-making. 
+          Proficient in data preprocessing, analysis, and visualization using tools like Python, Pandas, and Matplotlib. 
+          Strong ability to identify patterns and trends, transforming raw data into meaningful narratives that guide strategic business directions.
+          </p>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/*<div className="w-screen mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 px-14 bg-myblue text-offwhite">
+        <div>
+          <div>Send me a message!</div>
+          <div>Got a question or proposal, or just want to say hello? Go ahead.</div>
+          <div>Your Name</div>
+          <div>Email Address</div>
+          <div>Your Message</div>
+          <div>Shoot</div>
+        </div>
+      </div> */}
+      <div className="w-screen mx-auto py-14 sm:py-14 lg:py-14 bg-purple text-turquoise px-14">
+        <div className="text-offwhite">SAY HELLO</div>
+        <p><Link href="mailto:gmcsebastin@gmail.com">gmcsebastin@gmail.com</Link></p>
+        <p><Link href="https://t.me/sebastinn">t.me/sebastinn</Link></p>
+        {/* <Link href="#">MY PROJECTS</Link> */}
+        <div className="divider mt-14">_______________________________________</div>
+        <p>Coded in Visual Studio Code, <br/> built with Next.js and Tailwind CSS, deployed in Vercel</p>
+        <p className="mt-14">© Sebastin Goh 2023</p>
       </div>
     </main>
+    </>
   )
 }

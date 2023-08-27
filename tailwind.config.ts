@@ -8,10 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'Figtree': ['Figtree', 'sans-serif']
+      },
+      colors: {
+        'myblue': '#1E0066',
+        'turquoise': '#9DF1CD',
+        'offwhite': '#F0F0E1',
+        'purple': '#971CB5',
       },
     },
   },

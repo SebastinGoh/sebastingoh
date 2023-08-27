@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -10,18 +11,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* --primary-rgb: 72, 60, 70; */
+    --blue: 30, 0, 102;
+    --turquoise: 157, 241, 205;
+    --offwhite: 240, 240, 225;
+    --purple: 151, 28, 181;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  color: rgb(var(--blue));
+  background: rgb(var(--offwhite));
 }
