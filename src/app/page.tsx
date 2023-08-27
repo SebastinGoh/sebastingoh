@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <nav className="bg-myblue">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 font-figtree">
-        <a href="www.sebastingoh.com" className="">
+        <a href="https://www.sebastingoh.com" className="">
             <span className="self-center text-2xl whitespace-nowrap pl-3 text-turquoise">SEBASTIN <span className="text-offwhite">GOH</span></span>
         </a>
         {/* 
