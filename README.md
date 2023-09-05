@@ -14,6 +14,14 @@ Coded in Visual Studio Code, built with Next.js and Tailwind CSS, deployed in Ve
 - [ ] 6 : add filter for certain types of projects (content)
 - [ ] 7 : add 'work in progress' noitce on page    (content)
 - [ ] 8 : add 'contact me' section on page         (content)
+- [ ] 9 : add custom loading icon                  (meta)
+- [ ] 10: add static header div between pages      (meta)
+
+## Future Improvements
+- [ ] 1 : add animated spin icon for previous resume versions
+
+## Note to self
+- Open pull request when working on improvements for better tracking
 
 ## Credits
 - - -
